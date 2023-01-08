@@ -10,3 +10,6 @@
 - clean
 - post
 - help
+
+## Workflow
+- Continuous Integration with GitHub Actions
