@@ -29,7 +29,7 @@ jobs:
       - name: Execute the make help command
         run: |
           cd module3_task1/
-          ./setup.sh
+          sudo ./setup.sh
       
       # Go to the right folder and execute 'make build'
       - name: Build the application
