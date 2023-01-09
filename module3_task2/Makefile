@@ -15,6 +15,7 @@ lint: ## Check markdown files for any syntax mistake
 	@markdownlint README.md DEPLOY.md
 
 package: ## Create a .zip file that contains the binary of awesome api and dist directory
+	@hugo
 	@zip -r awesome-website.zip dist
 
 unit-tests: ## Run unit-tets of the project
