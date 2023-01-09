@@ -17,13 +17,14 @@ lint: ## Check markdown files for any syntax mistake
 package: ## Create a .zip file that contains the binary of awesome api and dist directory
 	@zip -r awesome-website.zip dist
 
-help: ## Show this help usage
-	@echo "Usage: make <command>"
-	@cat Makefile | grep "^\w*:.*##.*" | sed 's/## //'
-
 unit-tests: ## Run unit-tets of the project
 
 integration-tests: ## Run integration-tests of the project
 
+
 validate: ## Validate the errors on setup script
 	@shellcheck setup.sh
+
+help: ## Show this help usage
+	@echo "Usage: make <command>"
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
