@@ -6,7 +6,7 @@ name: module3_task2
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or once per day at midnight
-  push: 
+  push:
     paths:
       - 'module3_task2/**'
   schedule:
