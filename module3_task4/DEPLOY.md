@@ -28,4 +28,5 @@
 named `1.0.0` and pointing to the tag `1.0.0`
 
 ## Create a release
+
 * Create a `GitHub Release` using the 1.0.1
