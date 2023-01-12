@@ -62,9 +62,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Archive awesome-website.zip as artifact
-          path: |
-            module3_task3/awesome-website.zip
-            module3_task3/DEPLOY.md
+          path: module3_task4/awesome-website.zip
+          # module3_task4/DEPLOY.md
 
       # Generate a release with the archive and the content of DEPLOY.md
       - name: Create a GitHub Release
